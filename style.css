@@ -238,41 +238,11 @@ nav div button{
   width: 300px;
   height: 300px;
   margin: 10px;
-  background: linear-gradient(135deg,#1f2a5a,#3a1c4b);
+ background: linear-gradient(135deg,#1f2a5a,#3a1c4b);
   border-radius: 13px;
   position: relative;
   padding: 20px;
   vertical-align: top;
-
-}
-.op3{
-  height: 90px ;
-  width: 90px;
-  top: 155px;
-  border-radius: 12%;
-  position: absolute;
-  left: 200px;
-  top: 200px;
-}
-.option3 h2{
-  font-size: 20x;
-  margin-top: 20px;
-
-}
-.option3 p{
-  font-size: 16px;
-  margin-top: 20px;
-  
-}
-.option3{
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  margin: 10px;
-  background: linear-gradient(135deg,#1f2a5a,#3a1c4b);
-  border-radius: 13px;
-  position: relative;
-  padding: 20px;
 
 }
 .op3{
@@ -418,4 +388,174 @@ nav div button{
 
 .footer-country{
   margin-top: 10px;
+}
+
+@media (max-width: 600px){
+  .heading{
+    width: 500px;
+    height: 550px;
+    padding: 22px;
+  }
+  nav{
+    padding-bottom: 43px;
+  }
+
+  .logo{
+    width: 95px;
+    margin-left: 0;
+  }
+
+  nav div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  nav div button{
+    margin-right: 15px;
+    padding: 7px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+
+  .lang-button{
+    padding: 7px 10px;
+    margin-right: 0;
+  }
+
+  .head-content{
+    position: static;
+    transform: translate(0,0);/* reset/remove the previous translate(-50%,-50%) so the element doesn’t shift on small screens */
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .head-content h1{
+    font-size: 32px;
+  }
+
+  .head-content h3{
+    font-size: 16px;
+    margin: 13px;
+  }
+
+  .head-content h4{
+    font-size: 14px;
+  }
+  .email-form{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .email-form input{
+    width: 400px;
+    height: 48px;
+    font-size: 15px;
+  }
+
+  .email-form button{
+    height: 48px;
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+  
+  .trending-sec{
+    padding: 16px;
+    text-align: left;
+  }
+  .i1,.i2,.i3,.i4,.i5,.i6{
+    position: static ;
+    top: auto ; /* resets any left values from desktop CSS */
+    left: auto ;
+    right: auto ;
+    bottom: auto ;
+    display: none; /* hide all by default */
+  }
+
+  .i1,.i2,.i3{
+    display: inline-block;
+    width: 140px;
+    height: 180px;
+    border-radius: 10px;
+  }
+
+  .trending-sec{
+    display: flex;
+    flex-wrap: wrap; /* if items don't fit in one row, move the remaining items to the next line */
+    gap: 12px;
+  }
+
+  .trending-sec h2{
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .more-option{
+    padding: 16px ;
+  }
+
+  .more-option h2{
+    font-size: 18px;
+     margin-top: 10px;
+  }
+
+  .option1,.option2,.option3,.option4{
+    width: 440px;
+    height: 200px;
+
+  }
+
+  .option1 h2,.option2 h2,.option3 h2,.option4 h2{
+    font-size: 18px;
+  }
+
+  .option1 p,.option2 p,.option3 p,.option4 p{
+    font-size: 14px;
+    margin-top: 10px;
+    line-height:1.5;/*gap b/w the compressed lines*/
+    
+  }
+
+  .op1,.op2,.op3,.op4{
+    width: 70px;
+    height: 70px;
+    left: 350px;
+    top: auto; 
+    bottom: 16px;
+    position: absolute;
+  }
+  .faq{
+    padding:16px;
+  }
+
+  .faq h2{
+    font-size: 18px;
+  }
+
+  .faq-question{
+    font-size: 18px;
+    width: 450px;
+    height: 65px;
+  }
+
+  .plus1{
+    top: 10px;
+    right: 12px;
+    width: 40px;
+  }
+  .e2{
+    padding: 0; /* removes all extra inner spacing (especially the old left padding) so the text centers correctly */
+    text-align: center;
+    margin:16px;
+    font-size: 14px;
+  }
+  .netflix-footer{
+    padding: 40px ;
+  }
+
+  .footer-links{
+    grid-template-columns: 1fr; /*one column that takes full width*/
+    gap: 10px;
+  }
 }
